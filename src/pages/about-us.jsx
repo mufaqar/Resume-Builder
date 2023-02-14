@@ -1,16 +1,16 @@
-import Footer from '@/components/footer'
-import Header from '@/components/header'
-import { AboutUsModule } from '@/modules/imports'
-import React from 'react'
+import Footer from '@/components/footer';
+import Header from '@/components/header';
+import { AboutUsModule } from '@/modules/imports';
+import React from 'react';
 
-const AboutUsPage = () => {
+const AboutUsPage_Page = () => {
   return (
     <>
-    <Header />
-    <AboutUsModule/>
-    <Footer/>
+      <Header />
+      <AboutUsModule />
+      <Footer />
     </>
-  )
-}
+  );
+};
 
-export default AboutUsPage
+export default AboutUsPage;
