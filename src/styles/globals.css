@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Open+Sans:wght@300;400;500&family=Roboto:wght@300;400;500;700&display=swap');
+
+@layer components{
+     .input{
+          @apply  mt-2 text-gray-900 border-none text-lg outline-none ring-0 focus:ring-0 rounded-[3px] bg-[#EFF2F9]  block w-full p-[14px] placeholder:text-lg
+     }
+}
+
+
+
+@font-face {
+     font-family: apple-sd;
+     src: url('../../public/fonts/Apple-SD-Gothic-Neo-Bold.ttf');
+}
+.font-apple-sd{
+     font-family: apple-sd, 'Inter';
+}
+.font-inter{
+     font-family: 'Inter', sans-serif;
+}
+.font-roboto{
+     font-family: 'Roboto', sans-serif;
+}
+.ql-toolbar.ql-snow .ql-formats{
+     border-right: 1px solid #BEC4D5;
+     padding-right: 10px;
+}
+.ql-toolbar.ql-snow .ql-formats:last-child{
+     border-right: none;
+}
+.ql-toolbar.ql-snow,
+.ql-container.ql-snow{
+     border: none !important;
+}
+.ql-container.ql-snow{
+     padding: 0px 1rem;
+     font-size: 19px;
+     color: #1E2532;
+     letter-spacing: 1px;
+     font-weight: 300;
+}
+.ql-container{
+ height: 185px !important
+}
+
+.image-container {
+  width: 100%; 
+}
+.image-container > div {
+     position: unset !important;
+}
+.image-container .image {
+     object-fit: contain;
+     width: 100% !important;
+     position: relative !important;
+     height: unset !important;
+}
+.ReactModalPortal>div{
+     background-color: rgb(15 15 15 / 48%) !important;
+}
+.ReactModalPortal>div>div{
+max-width: 576px;
+    width: 100%;
+}
+
+.ReactModalPortal>div>div::-webkit-scrollbar {
+     display: none;
+}
+   
+/* Hide scrollbar for IE, Edge and Firefox */
+.ReactModalPortal>div>div {
+-ms-overflow-style: none;  /* IE and Edge */
+scrollbar-width: none;  /* Firefox */
+}
+.reviewcard .card:nth-child(odd){
+     border-bottom: 1px solid #E5E7EB;
+     border-right: 1px solid #E5E7EB;
+}
+.reviewcard .card:nth-child(even){
+     border-bottom: 1px solid #E5E7EB;
+}
+.reviewcard .card:nth-child(3){
+     border-bottom: 1px solid transparent;
+}
+.reviewcard .card:last-child{
+     border-bottom: 1px solid transparent;
+}
+
+h1,h2,h3,h4,h5,h6,p,span,li,a{
+     font-family: 'Inter', sans-serif;
+}
+
+.bg-pos-right{
+     background-position: right -12em bottom;
+}
+
+/* input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+} */
+._list li{
+     list-style: disc;
+}
+._list ul{
+     padding-left: .9rem;
+}
+/* media queries  */
+@media (max-height: 900px){
+     .ReactModalPortal>div>div{
+          max-height: 600px !important;
+          height: 100% !important;
+     }
+}
+
+.react-datepicker__month{
+     padding: .5rem !important;
+}
+.react-datepicker__month .react-datepicker__month-text, .react-datepicker__month .react-datepicker__quarter-text{
+     padding:8px;
+     border-radius: 16px;
+}
